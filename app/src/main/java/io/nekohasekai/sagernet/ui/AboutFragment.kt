@@ -210,4 +210,5 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                 overScrollMode = RecyclerView.OVER_SCROLL_NEVER
             }
         }
+    }
 }
