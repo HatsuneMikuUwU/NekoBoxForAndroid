@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">NekoBox</string>
-    <string name="app_name_long" translatable="false">NekoBox for Android</string>
+    <string name="app_name" translatable="false">MikuBox</string>
+    <string name="app_name_long" translatable="false">MikuBox for Android</string>
     <string name="app_desc">The universal proxy toolchain for Android, written in Kotlin.</string>
     <string name="project">Project</string>
     <string name="github">Source code</string>
@@ -588,14 +588,14 @@
 menu, please select
 whichever option
 you need."</string>
-<string name="uwu_banner_summary">"Let's sing with me!"</string>
+    <string name="uwu_banner_summary">"Let's sing with me!"</string>
     <string name="uwu_banner_title">Hi, master</string>
     <string name="uwu_general_settings_title">General settings</string>
-    <string name="uwu_maintainer_summary">Matsuridayo Development</string>
+    <string name="uwu_maintainer_summary">HatsuneMikuUwU Development</string>
     <string name="uwu_maintainer_title">This app is under maintenance</string>
     <string name="uwu_splash_summary">Version 1.4.0 (220)</string>
     <string name="uwu_splash_title">"Made With ♥️
-By Matsuridayo Development"</string>
+By HatsuneMikuUwU Development"</string>
     <string name="uwu_theme_settings_summary">Choose the accent color yourself</string>
     <string name="uwu_theme_settings_title">Theme settings</string>
     <string name="uwu_banner_settings_title">Hello there...</string>

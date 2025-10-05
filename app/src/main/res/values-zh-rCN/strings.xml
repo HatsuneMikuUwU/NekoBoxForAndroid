@@ -508,15 +508,15 @@
 请选择任何你
 需要的和必须
 的功能选项"</string>
-<string name="uwu_banner_settings_title">你好呀……</string>
-<string name="uwu_banner_summary">来和我一起唱歌吧！</string>
+    <string name="uwu_banner_settings_title">你好呀……</string>
+    <string name="uwu_banner_summary">来和我一起唱歌吧！</string>
     <string name="uwu_banner_title">嗨，主人</string>
     <string name="uwu_general_settings_title">通用设置</string>
-    <string name="uwu_maintainer_summary">Matsuridayo 开发团队</string>
+    <string name="uwu_maintainer_summary">HatsuneMikuUwU 开发团队</string>
     <string name="uwu_maintainer_title">本应用由以下团队维护</string>
     <string name="uwu_splash_summary">版本 1.4.0 (220)</string>
     <string name="uwu_splash_title">"用心制作 ❤️
-Matsuridayo 开发组"</string>
+HatsuneMikuUwU 开发组"</string>
     <string name="uwu_theme_settings_summary">自定义强调色</string>
     <string name="uwu_theme_settings_title">主题设置</string>
 </resources>
