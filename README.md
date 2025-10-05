@@ -1,18 +1,18 @@
-# NekoBox for Android
+# MikuBox for Android
 
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
-[![Releases](https://img.shields.io/github/v/release/MatsuriDayo/NekoBoxForAndroid)](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)
+[![Releases](https://img.shields.io/github/v/release/HatsuneMikuUwU/MikuBoxForAndroid)](https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases)
 [![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-orange.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 sing-box / universal proxy toolchain for Android.
 
 一款使用 sing-box 的 Android 通用代理软件.
 
-## 下载 / Downloads
+## 下载 / Download
 
-[![GitHub All Releases](https://img.shields.io/github/downloads/Matsuridayo/NekoBoxForAndroid/total?label=downloads-total&logo=github&style=flat-square)](https://github.com/Matsuridayo/NekoBoxForAndroid/releases)
+[![GitHub All Releases](https://img.shields.io/github/downloads/HatsuneMikuUwU/MikuBoxForAndroid/total?label=downloads-total&logo=github&style=flat-square)](https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases)
 
-[GitHub Releases 下载](https://github.com/Matsuridayo/NekoBoxForAndroid/releases)
+[GitHub Releases 下载](https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases)
 
 **Google Play 版本自 2024 年 5 月起已被第三方控制，为非开源版本，请不要下载。**
 
@@ -21,7 +21,9 @@ source version. Please do not download it.**
 
 ## 更新日志 & Telegram 发布频道 / Changelog & Telegram Channel
 
-https://t.me/Matsuridayo
+[Author NekoBox](https://t.me/Matsuridayo)
+
+[Author MikuBox](https://t.me/uwuowoumuchannel)
 
 ## 项目主页 & 文档 / Homepage & Documents
 
@@ -62,28 +64,6 @@ supports.
 
 Only resolving outbound, i.e. nodes, is supported. Information such as diversion rules are ignored.
 
-## 捐助 / Donate
-
-<details>
-
-如果这个项目对您有帮助, 可以通过捐赠的方式帮助我们维持这个项目.
-
-捐赠满等额 50 USD 可以在「[捐赠榜](https://mtrdnt.pages.dev/donation_list)」显示头像, 如果您未被添加到这里,
-欢迎联系我们补充.
-
-Donations of 50 USD or more can display your avatar on
-the [Donation List](https://mtrdnt.pages.dev/donation_list). If you are not added here, please
-contact us to add it.
-
-USDT TRC20
-
-`TRhnA7SXE5Sap5gSG3ijxRmdYFiD4KRhPs`
-
-XMR
-
-`49bwESYQjoRL3xmvTcjZKHEKaiGywjLYVQJMUv79bXonGiyDCs8AzE3KiGW2ytTybBCpWJUvov8SjZZEGg66a4e59GXa6k5`
-
-</details>
 
 ## Credits
 
