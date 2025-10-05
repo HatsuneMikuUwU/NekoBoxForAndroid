@@ -73,7 +73,7 @@ jobs:
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
           echo "sdk.dir=${ANDROID_HOME}" > local.properties
-          echo "ndk.dir=${ANDROID_HOME}/ndk/25.0.8775105" >> local.properties
+          echo "ndk.dir=${ANDROID_HOME}/ndk/26.3.11579264" >> local.properties
           echo "${{ secrets.LOCAL_PROPERTIES }}" >> local.properties
           ./run init action gradle
           ./gradlew app:assembleOssRelease
