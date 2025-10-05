@@ -186,23 +186,14 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                     )
                                 }
                                 .build())
-                        .build())
-                .build()
-
-                }
-              }
-                .addCard(
-                    MaterialAboutCard.Builder()
-                        .outline(false)
-                        .title(R.string.project)
                         .addItem(
                             MaterialAboutActionItem.Builder()
                                 .icon(R.drawable.ic_baseline_sanitizer_24)
-                                .text(R.string.uwu_nekobox)
+                                .text(R.string.uwu_mikubox)
                                 .subText(R.string.github)
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
-                                        "https://github.com/MatsuriDayo/NekoBoxForAndroid"
+                                        "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid"
 
                                     )
                                 }
@@ -210,11 +201,11 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                         .addItem(
                             MaterialAboutActionItem.Builder()
                                 .icon(R.drawable.ic_qu_shadowsocks_foreground)
-                                .text(R.string.uwu_matsuridayo)
+                                .text(R.string.uwu_hatsune)
                                 .subText(R.string.telegram)
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
-                                        "https://t.me/MatsuriDayo"
+                                        "https://t.me/uwuowoumuchannel"
                                     )
                                 }
                                 .build())
