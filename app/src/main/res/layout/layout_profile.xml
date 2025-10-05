@@ -9,7 +9,7 @@
     android:layout_marginTop="16.0dip"
     android:layout_marginRight="16.0dip"
     android:layout_marginBottom="0.0dip"
-    app:cardBackgroundColor="?colorCard"
+    app:cardBackgroundColor="?attr/colorCard"
     app:cardCornerRadius="14.0dip"
     app:cardElevation="0.0dip"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -45,10 +45,7 @@
                     android:layout_marginTop="10.0dip"
                     android:src="@drawable/ic_social_emoji_symbols"
                     android:tint="?android:textColorPrimaryInverse"
-                    android:layout_marginStart="10.0dip"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_marginStart="10.0dip" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
