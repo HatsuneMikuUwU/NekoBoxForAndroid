@@ -132,8 +132,6 @@ fun Project.setupAppCommon() {
                     enableV3Signing = true
                 }
             }
-        }else if (requireFlavor().contains("ossRelease")) {
-            exitProcess(0)
         }
         buildTypes {
             val key = signingConfigs.findByName("release")
