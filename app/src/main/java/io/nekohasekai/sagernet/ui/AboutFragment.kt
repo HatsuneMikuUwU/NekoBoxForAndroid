@@ -186,6 +186,7 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                     )
                                 }
                                 .build())
+                           }
 
                 .addCard(
                     MaterialAboutCard.Builder()
