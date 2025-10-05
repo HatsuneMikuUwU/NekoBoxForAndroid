@@ -8,9 +8,6 @@ on:
       publish:
         description: "Publish: If want ignore"
         required: false
-      play:
-        description: "Play: If want ignore"
-        required: false
 jobs:
   libcore:
     name: Native Build (LibCore)
@@ -91,7 +88,6 @@ jobs:
 
   publish:
     name: Publish Release
-    # 當手動觸發時，如果 publish 選項為 true，則執行此任務
     if: github.event.inputs.publish
     runs-on: ubuntu-latest
     needs: build
@@ -111,54 +107,3 @@ jobs:
           mkdir apks
           find artifacts -name "*.apk" -exec cp {} apks \;
           ./ghr -delete -t "${{ github.token }}" -n "${{ github.event.inputs.tag }}" "${{ github.event.inputs.tag }}" apks
-
-  play:
-    name: Build Play Bundle
-    if: github.event.inputs.play != 'y'
-    runs-on: ubuntu-latest
-    needs:
-      - libcore
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Golang Status
-        run: find buildScript libcore/*.sh | xargs cat | sha1sum > golang_status
-      - name: Libcore Status
-        run: git ls-files libcore | xargs cat | sha1sum > libcore_status
-      - name: LibCore Cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            app/libs/libcore.aar
-          key: ${{ hashFiles('.github/workflows/*', 'golang_status', 'libcore_status') }}
-      - name: Gradle cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.gradle
-          key: gradle-play-${{ hashFiles('**/*.gradle.kts') }}
-      - name: Checkout Library
-        run: |
-          git submodule update --init 'app/*'
-
-      - name: Decode Keystore
-        env:
-          SIGNING_KEY_BASE64: ${{ secrets.SIGNING_KEY_BASE64 }}
-        run: |
-          echo $SIGNING_KEY_BASE64 | base64 -d > app/release_keystore.jks
-
-      - name: Gradle Build
-        env:
-          KEY_STORE_PASSWORD: ${{ secrets.KEY_STORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-        run: |
-          echo "sdk.dir=${ANDROID_HOME}" > local.properties
-          echo "ndk.dir=${ANDROID_HOME}/ndk/25.0.8775105" >> local.properties
-          export LOCAL_PROPERTIES="${{ secrets.LOCAL_PROPERTIES }}"
-          ./run init action gradle
-          ./gradlew bundlePlayRelease
-      
-      - uses: actions/upload-artifact@v4
-        with:
-          name: AAB
-          path: app/build/outputs/bundle/playRelease/app-play-release.aab
