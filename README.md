@@ -22,6 +22,7 @@ source version. Please do not download it.**
 ## 更新日志 & Telegram 发布频道 / Changelog & Telegram Channel
 
 Author NekoBox: https://t.me/Matsuridayo
+
 Author MikuBox: https://t.me/uwuowoumuchannel
 
 ## 项目主页 & 文档 / Homepage & Documents
