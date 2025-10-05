@@ -599,4 +599,7 @@ By Matsuridayo Development"</string>
     <string name="uwu_theme_settings_summary">Choose the accent color yourself</string>
     <string name="uwu_theme_settings_title">Theme settings</string>
     <string name="uwu_banner_settings_title">Hello there...</string>
+
+    <string name="uwu_nekobox">NekoBox</string>
+    <string name="uwu_matsuridayo">Matsuridayo</string>
 </resources>
