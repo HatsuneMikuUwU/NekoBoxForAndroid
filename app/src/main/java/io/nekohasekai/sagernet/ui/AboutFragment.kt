@@ -166,7 +166,8 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                         .addItem(
                             MaterialAboutActionItem.Builder()
                                 .icon(R.drawable.ic_baseline_sanitizer_24)
-                                .text(R.string.github)
+                                .text(R.string.uwu_nekobox)
+                                .subText(R.string.github)
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
                                         "https://github.com/MatsuriDayo/NekoBoxForAndroid"
@@ -177,7 +178,8 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                         .addItem(
                             MaterialAboutActionItem.Builder()
                                 .icon(R.drawable.ic_qu_shadowsocks_foreground)
-                                .text(R.string.telegram)
+                                .text(R.string.uwu_matsuridayo)
+                                .subText(R.string.telegram)
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
                                         "https://t.me/MatsuriDayo"
