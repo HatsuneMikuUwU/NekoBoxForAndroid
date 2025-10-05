@@ -7,6 +7,7 @@
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    
     <LinearLayout
         android:gravity="center"
         android:layout_gravity="center"
@@ -38,7 +39,9 @@
             app:layout_constraintEnd_toEndOf="@+id/logo_view"
             app:layout_constraintStart_toStartOf="@+id/logo_view"
             app:layout_constraintTop_toBottomOf="@+id/logo_view" />
+        
     </LinearLayout>
+    
     <TextView
         android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
         android:textSize="14.0sp"
@@ -53,6 +56,7 @@
         app:layout_constraintBottom_toTopOf="@+id/splash_version"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+    
     <TextView
         android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
         android:textSize="14.0sp"
@@ -66,4 +70,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
