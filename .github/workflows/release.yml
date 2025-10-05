@@ -33,10 +33,11 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         uses: actions/setup-go@v5
         with:
-          go-version: ^1.25
+          go-version: ^1.22
       - name: Native Build
         if: steps.cache.outputs.cache-hit != 'true'
         run: ./run lib core
+
   build:
     name: Build OSS APK
     runs-on: ubuntu-latest
@@ -60,31 +61,44 @@ jobs:
         with:
           path: ~/.gradle
           key: gradle-oss-${{ hashFiles('**/*.gradle.kts') }}
+          
+      - name: Decode Keystore
+        env:
+          SIGNING_KEY_BASE64: ${{ secrets.SIGNING_KEY_BASE64 }}
+        run: |
+          echo "$SIGNING_KEY_BASE64" | base64 --decode > app/release_keystore.jks
+          
       - name: Gradle Build
         env:
           BUILD_PLUGIN: none
+          KEY_STORE_PASSWORD: ${{ secrets.KEY_STORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
           echo "sdk.dir=${ANDROID_HOME}" > local.properties
           echo "ndk.dir=${ANDROID_HOME}/ndk/25.0.8775105" >> local.properties
-          export LOCAL_PROPERTIES="${{ secrets.LOCAL_PROPERTIES }}"
+          echo "${{ secrets.LOCAL_PROPERTIES }}" >> local.properties
           ./run init action gradle
           ./gradlew app:assembleOssRelease
-          APK=$(find app/build/outputs/apk -name '*arm64-v8a*.apk')
-          APK=$(dirname $APK)
-          echo "APK=$APK" >> $GITHUB_ENV
+          APK_PATH=$(find app/build/outputs/apk -name '*arm64-v8a*.apk' | head -n 1)
+          APK_DIR=$(dirname "$APK_PATH")
+          echo "APK_DIR=$APK_DIR" >> $GITHUB_ENV
+      
       - uses: actions/upload-artifact@v4
         with:
           name: APKs
-          path: ${{ env.APK }}
+          path: ${{ env.APK_DIR }}
+
   publish:
     name: Publish Release
-    if: github.event.inputs.publish != 'y'
+    # 當手動觸發時，如果 publish 選項為 true，則執行此任務
+    if: github.event.inputs.publish
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Donwload Artifacts
+      - name: Download Artifacts
         uses: actions/download-artifact@v4
         with:
           name: APKs
@@ -97,6 +111,7 @@ jobs:
           mkdir apks
           find artifacts -name "*.apk" -exec cp {} apks \;
           ./ghr -delete -t "${{ github.token }}" -n "${{ github.event.inputs.tag }}" "${{ github.event.inputs.tag }}" apks
+
   play:
     name: Build Play Bundle
     if: github.event.inputs.play != 'y'
@@ -124,14 +139,26 @@ jobs:
       - name: Checkout Library
         run: |
           git submodule update --init 'app/*'
+
+      - name: Decode Keystore
+        env:
+          SIGNING_KEY_BASE64: ${{ secrets.SIGNING_KEY_BASE64 }}
+        run: |
+          echo $SIGNING_KEY_BASE64 | base64 -d > app/release_keystore.jks
+
       - name: Gradle Build
+        env:
+          KEY_STORE_PASSWORD: ${{ secrets.KEY_STORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
           echo "sdk.dir=${ANDROID_HOME}" > local.properties
           echo "ndk.dir=${ANDROID_HOME}/ndk/25.0.8775105" >> local.properties
           export LOCAL_PROPERTIES="${{ secrets.LOCAL_PROPERTIES }}"
           ./run init action gradle
           ./gradlew bundlePlayRelease
-      - uses: actions/upload-artifact@v3
+      
+      - uses: actions/upload-artifact@v4
         with:
           name: AAB
           path: app/build/outputs/bundle/playRelease/app-play-release.aab
