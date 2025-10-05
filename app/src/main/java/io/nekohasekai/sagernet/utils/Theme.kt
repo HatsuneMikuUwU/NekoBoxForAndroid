@@ -30,6 +30,7 @@ object Theme {
     const val GREY = 19
     const val BLUE_GREY = 20
     const val BLACK = 21
+    const val DYNAMIC = 22
 
     private fun defaultTheme() = TEAL
 
@@ -72,6 +73,7 @@ object Theme {
             GREY -> R.style.Theme_SagerNet_Grey
             BLUE_GREY -> R.style.Theme_SagerNet_BlueGrey
             BLACK -> R.style.Theme_SagerNet_Black
+            DYNAMIC -> R.style.Theme_SagerNet_Dynamic
             else -> getTheme(defaultTheme())
         }
     }
@@ -99,6 +101,7 @@ object Theme {
             GREY -> R.style.Theme_SagerNet_Dialog_Grey
             BLUE_GREY -> R.style.Theme_SagerNet_Dialog_BlueGrey
             BLACK -> R.style.Theme_SagerNet_Dialog_Black
+            DYNAMIC -> R.style.Theme_SagerNet_Dialog_Dynamic
             else -> getDialogTheme(defaultTheme())
         }
     }
