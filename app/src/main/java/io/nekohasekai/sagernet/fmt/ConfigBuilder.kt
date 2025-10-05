@@ -211,7 +211,7 @@ fun buildConfig(
                 sniff = needSniff
                 sniff_override_destination = needSniffOverride
                 auto_route = true
-                strict_route = ture
+                strict_route = true
                 when (ipv6Mode) {
                     IPv6Mode.DISABLE -> {
                         inet4_address = listOf(VpnService.PRIVATE_VLAN4_CLIENT + "/28")
