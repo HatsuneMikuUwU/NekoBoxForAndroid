@@ -83,7 +83,7 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                 .subText(SagerNet.appVersionNameForDisplay)
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
-                                        "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases"
+                                        "https://github.com/HSSkyBoy/MikuBox/releases"
                                     )
                                 }
                                 .build())
@@ -166,29 +166,6 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                         .addItem(
                             MaterialAboutActionItem.Builder()
                                 .icon(R.drawable.ic_baseline_sanitizer_24)
-                                .text(R.string.uwu_nekobox)
-                                .subText(R.string.github)
-                                .setOnClickAction {
-                                    requireContext().launchCustomTab(
-                                        "https://github.com/MatsuriDayo/NekoBoxForAndroid"
-
-                                    )
-                                }
-                                .build())
-                        .addItem(
-                            MaterialAboutActionItem.Builder()
-                                .icon(R.drawable.ic_qu_shadowsocks_foreground)
-                                .text(R.string.uwu_matsuridayo)
-                                .subText(R.string.telegram)
-                                .setOnClickAction {
-                                    requireContext().launchCustomTab(
-                                        "https://t.me/MatsuriDayo"
-                                    )
-                                }
-                                .build())
-                        .addItem(
-                            MaterialAboutActionItem.Builder()
-                                .icon(R.drawable.ic_baseline_sanitizer_24)
                                 .text(R.string.uwu_mikubox)
                                 .subText(R.string.github)
                                 .setOnClickAction {
@@ -201,11 +178,34 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                         .addItem(
                             MaterialAboutActionItem.Builder()
                                 .icon(R.drawable.ic_qu_shadowsocks_foreground)
-                                .text(R.string.uwu_hatsune)
+                                .text(R.string.uwu_hatsune )
                                 .subText(R.string.telegram)
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
-                                        "https://t.me/uwuowoumuchannel"
+                                        "https://t.me/uwuowoumuChannel"
+                                    )
+                                }
+                                .build())
+                        .addItem(
+                            MaterialAboutActionItem.Builder()
+                                .icon(R.drawable.ic_baseline_sanitizer_24)
+                                .text(R.string.uwu_mikubox)
+                                .subText(R.string.github)
+                                .setOnClickAction {
+                                    requireContext().launchCustomTab(
+                                        "https://github.com/HSSkyBoy/MikuBox"
+
+                                    )
+                                }
+                                .build())
+                        .addItem(
+                            MaterialAboutActionItem.Builder()
+                                .icon(R.drawable.ic_qu_shadowsocks_foreground)
+                                .text(R.string.uwu_hsskyboy)
+                                .subText(R.string.telegram)
+                                .setOnClickAction {
+                                    requireContext().launchCustomTab(
+                                        "https://t.me/npatch"
                                     )
                                 }
                                 .build())
