@@ -497,10 +497,6 @@
     <!-- uwu -->
     <string name="uwu_about_miku_summary">初音未来(Hatsune Miku) 是 Crypton Future Media 发布的基于 Vocaloid 制作的虚拟歌手，代号CV01。以青绿色的长双马尾和清亮嗓音著称，人设为16岁少女，是全球知名虚拟偶像，广泛活跃于音乐、演唱会及动画，深受粉丝们喜爱。</string>
     <string name="uwu_about_miku_title">谁是 Hatsune Miku?</string>
-    <string name="uwu_about_modder_channel_summary">Telegram 频道更新</string>
-    <string name="uwu_about_modder_channel_title">模组开发者</string>
-    <string name="uwu_about_modder_summary">重新设计用户界面</string>
-    <string name="uwu_about_modder_title">Miku UwU</string>
     <string name="uwu_about_version_summary">点击此处或箭头图标，了解应用更多信息。</string>
     <string name="uwu_about_version_title">关于应用</string>
     <string name="uwu_banner_settings_summary">"欢迎来到设置菜单，
@@ -513,7 +509,7 @@
     <string name="uwu_general_settings_title">通用设置</string>
     <string name="uwu_maintainer_summary">HatsuneMikuUwU 开发团队</string>
     <string name="uwu_maintainer_title">本应用由以下团队维护</string>
-    <string name="uwu_splash_summary">版本 1.4.0 (220)</string>
+    <string name="uwu_splash_summary">版本 1.4.0 (225)</string>
     <string name="uwu_splash_title">"用心制作 ❤️
 HatsuneMikuUwU 开发组"</string>
     <string name="uwu_theme_settings_summary">自定义强调色</string>

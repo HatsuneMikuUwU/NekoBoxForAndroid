@@ -83,13 +83,13 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                 .subText(SagerNet.appVersionNameForDisplay)
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
-                                        "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases"
+                                        "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid/releases"
                                     )
                                 }
                                 .build())
                         .addItem(
                             MaterialAboutActionItem.Builder()
-                                .icon(R.drawable.ic_baseline_layers_24)
+                                .icon(R.drawable.ic_package_variant_closed)
                                 .text(getString(R.string.version_x, "sing-box"))
                                 .subText(Libcore.versionBox())
                                 .setOnClickAction { }
@@ -165,7 +165,7 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                         .title(R.string.project)
                         .addItem(
                             MaterialAboutActionItem.Builder()
-                                .icon(R.drawable.ic_baseline_sanitizer_24)
+                                .icon(R.drawable.ic_github)
                                 .text(R.string.uwu_nekobox)
                                 .subText(R.string.github)
                                 .setOnClickAction {
@@ -186,10 +186,33 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                     )
                                 }
                                 .build())
+                        .addItem(
+                            MaterialAboutActionItem.Builder()
+                                .icon(R.drawable.ic_github)
+                                .text(R.string.uwu_mikubox)
+                                .subText(R.string.github)
+                                .setOnClickAction {
+                                    requireContext().launchCustomTab(
+                                        "https://github.com/HatsuneMikuUwU/MikuBoxForAndroid"
+
+                                    )
+                                }
+                                .build())
+                        .addItem(
+                            MaterialAboutActionItem.Builder()
+                                .icon(R.drawable.ic_qu_shadowsocks_foreground)
+                                .text(R.string.uwu_hatsune)
+                                .subText(R.string.telegram)
+                                .setOnClickAction {
+                                    requireContext().launchCustomTab(
+                                        "https://t.me/uwuowoumuChannel"
+                                    )
+                                }
+                                .build())
                         .build())
                 .build()
 
-           }
+        }
 
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
             super.onViewCreated(view, savedInstanceState)
