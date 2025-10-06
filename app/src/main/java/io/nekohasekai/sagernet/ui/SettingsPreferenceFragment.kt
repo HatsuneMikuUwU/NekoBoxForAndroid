@@ -6,9 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.ActivityCompat
-import androidx.core.os.LocaleListCompat
 import androidx.preference.EditTextPreference
 import androidx.preference.Preference
 import androidx.preference.SwitchPreference
@@ -29,7 +27,6 @@ import moe.matsuri.nb4a.ui.LongClickListPreference
 import moe.matsuri.nb4a.ui.MTUPreference
 import com.takisoft.preferencex.PreferenceFragmentCompat
 import com.takisoft.preferencex.SimpleMenuPreference
-import java.util.Locale
 
 class SettingsPreferenceFragment : PreferenceFragmentCompat() {
 
@@ -68,31 +65,6 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         nightTheme.setOnPreferenceChangeListener { _, newTheme ->
             Theme.currentNightMode = (newTheme as String).toInt()
             Theme.applyNightTheme()
-            true
-        }
-
-        // Language switcher feature
-        fun getLanguageDisplayName(code: String): String = run {
-            return when (code) {
-                "" -> getString(R.string.language_system_default)
-                "en-US" -> getString(R.string.language_en_display_name)
-                "id" -> getString(R.string.language_id_display_name)
-                "zh-Hans-CN" -> getString(R.string.language_zh_Hans_CN_display_name)
-                else -> Locale.forLanguageTag(code).displayName
-            }
-        }
-        val appLanguage = findPreference<SimpleMenuPreference>(Key.APP_LANGUAGE)!!
-        val locale = when (val value = AppCompatDelegate.getApplicationLocales().toLanguageTags()) {
-            "in" -> "id"
-            else -> value
-        }
-        appLanguage.summary = getLanguageDisplayName(locale)
-        appLanguage.value = if (locale in resources.getStringArray(R.array.language_value)) locale else ""
-        appLanguage.setOnPreferenceChangeListener { _, newValue ->
-            newValue as String
-            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(newValue))
-            appLanguage.summary = getLanguageDisplayName(newValue)
-            appLanguage.value = newValue
             true
         }
 

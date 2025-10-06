@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="language_entry">
-        <item>@string/language_system_default</item>
-        <item>@string/language_en_display_name</item>
-        <item>@string/language_id_display_name</item>
-        <item>@string/language_zh_Hans_CN_display_name</item>
-    </string-array>
-    
-    <string-array name="language_value">
-        <item></item>
-        <item>en-US</item>
-        <item>id</item>
-        <item>zh-Hans-CN</item>
-    </string-array>
-
     <string-array name="int_array_2">
         <item>0</item>
         <item>1</item>
