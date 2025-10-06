@@ -2,23 +2,28 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    
     <Preference
         android:layout="@layout/uwu_banner_settings"
         android:selectable="false" />
+    
     <Preference
         android:icon="@drawable/uwu_check"
         android:layout="@layout/uwu_maintainer"
         android:title="@string/uwu_maintainer_title"
         android:selectable="false"
         android:summary="@string/uwu_maintainer_summary" />
+    
     <PreferenceCategory
         app:title="@string/uwu_theme_settings_title">
+        
         <moe.matsuri.nb4a.ui.ColorPickerPreference
             android:layout="@layout/uwu_top_switch"
             android:title="@string/theme"
             app:icon="@drawable/ic_baseline_color_lens_24"
             app:key="appTheme"
             app:summary="@string/uwu_theme_settings_summary" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_bot"
             app:defaultValue="0"
@@ -28,9 +33,12 @@
             app:key="nightTheme"
             app:title="@string/night_mode"
             app:useSimpleSummaryProvider="true" />
+        
     </PreferenceCategory>
+    
     <PreferenceCategory
         app:title="@string/general_settings">
+        
         <SwitchPreference
             android:layout="@layout/uwu_top_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -39,6 +47,7 @@
             app:key="isAutoConnect"
             app:summary="@string/auto_connect_summary"
             app:title="@string/auto_connect" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="vpn"
@@ -48,6 +57,7 @@
             app:key="serviceMode"
             app:title="@string/service_mode"
             app:useSimpleSummaryProvider="true" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="2"
@@ -57,6 +67,7 @@
             app:key="tunImplementation"
             app:title="@string/tun_implementation"
             app:useSimpleSummaryProvider="true" />
+        
         <moe.matsuri.nb4a.ui.MTUPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="9000"
@@ -65,6 +76,7 @@
             app:icon="@drawable/baseline_public_24"
             app:key="mtu"
             app:title="@string/mtu" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="1000"
@@ -74,6 +86,7 @@
             app:key="speedInterval"
             app:title="@string/speed_interval"
             app:useSimpleSummaryProvider="true" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -82,6 +95,7 @@
             app:key="profileTrafficStatistics"
             app:summary="@string/profile_traffic_statistics_summary"
             app:title="@string/profile_traffic_statistics" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -91,6 +105,7 @@
             app:summary="@string/show_direct_speed_sum"
             app:title="@string/show_direct_speed"
             app:useSimpleSummaryProvider="true" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -99,6 +114,7 @@
             app:icon="@drawable/ic_bell_ring"
             app:key="showGroupInNotification"
             app:title="@string/show_group_in_notification" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -106,6 +122,7 @@
             app:key="alwaysShowAddress"
             app:summary="@string/always_show_address_sum"
             app:title="@string/always_show_address" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -113,6 +130,7 @@
             app:key="meteredNetwork"
             app:summary="@string/metered_summary"
             app:title="@string/metered" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -120,6 +138,7 @@
             app:key="acquireWakeLock"
             app:summary="@string/acquire_wake_lock_summary"
             app:title="@string/acquire_wake_lock" />
+        
         <moe.matsuri.nb4a.ui.LongClickListPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="0"
@@ -129,15 +148,19 @@
             app:key="logLevel"
             app:title="@string/log_level"
             app:useSimpleSummaryProvider="true" />
+        
         <moe.matsuri.nb4a.ui.EditConfigPreference
             android:layout="@layout/uwu_bot"
             app:icon="@drawable/ic_baseline_layers_24"
             app:key="globalCustomConfig"
             app:title="@string/custom_config"
             app:useSimpleSummaryProvider="true" />
+        
     </PreferenceCategory>
+    
     <PreferenceCategory
         app:title="@string/cag_route">
+        
         <SwitchPreference
             android:layout="@layout/uwu_top_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -145,6 +168,7 @@
             app:key="proxyApps"
             app:summary="@string/proxied_apps_summary"
             app:title="@string/proxied_apps" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -153,6 +177,7 @@
             app:icon="@drawable/ic_baseline_legend_toggle_24"
             app:key="bypassLan"
             app:title="@string/route_opt_bypass_lan" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -161,6 +186,7 @@
             app:icon="@drawable/ic_lan"
             app:key="bypassLanInCore"
             app:title="@string/bypass_lan_in_core" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="1"
@@ -170,6 +196,7 @@
             app:key="trafficSniffing"
             app:title="@string/traffic_sniffing"
             app:useSimpleSummaryProvider="true" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -177,6 +204,7 @@
             app:key="resolveDestination"
             app:summary="@string/resolve_destination_summary"
             app:title="@string/resolve_destination" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="0"
@@ -186,6 +214,7 @@
             app:key="ipv6Mode"
             app:title="@string/ipv6"
             app:useSimpleSummaryProvider="true" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_bot"
             app:defaultValue="0"
@@ -195,16 +224,20 @@
             app:key="rulesProvider"
             app:title="@string/route_rules_provider"
             app:useSimpleSummaryProvider="true" />
+        
     </PreferenceCategory>
+    
     <PreferenceCategory
         app:title="@string/cag_dns">
+        
         <EditTextPreference
             android:layout="@layout/uwu_top"
-            app:defaultValue="https://dns.google/dns-query"
+            app:defaultValue="https://dcloudflare-dns.com/dns-query"
             app:icon="@drawable/ic_action_dns"
             app:key="remoteDns"
             app:title="@string/remote_dns"
             app:useSimpleSummaryProvider="true" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="auto"
@@ -214,6 +247,7 @@
             app:key="domain_strategy_for_remote"
             app:title="@string/domain_strategy_for_remote"
             app:useSimpleSummaryProvider="true" />
+        
         <EditTextPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="local"
@@ -221,6 +255,7 @@
             app:key="directDns"
             app:title="@string/direct_dns"
             app:useSimpleSummaryProvider="true" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="auto"
@@ -230,6 +265,7 @@
             app:key="domain_strategy_for_direct"
             app:title="@string/domain_strategy_for_direct"
             app:useSimpleSummaryProvider="true" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="auto"
@@ -239,6 +275,7 @@
             app:key="domain_strategy_for_server"
             app:title="@string/domain_strategy_for_server"
             app:useSimpleSummaryProvider="true" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -247,6 +284,7 @@
             app:key="enableDnsRouting"
             app:summary="@string/dns_routing_message"
             app:title="@string/enable_dns_routing" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_bot_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -254,15 +292,19 @@
             app:key="enableFakeDns"
             app:summary="@string/fakedns_message"
             app:title="@string/enable_fakedns" />
+        
     </PreferenceCategory>
+    
     <PreferenceCategory
         app:title="@string/inbound_settings">
+        
         <EditTextPreference
             android:layout="@layout/uwu_top"
             app:icon="@drawable/ic_maps_directions_boat"
             app:key="mixedPort"
             app:title="@string/port_proxy"
             app:useSimpleSummaryProvider="true" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -271,6 +313,7 @@
             app:key="appendHttpProxy"
             app:summary="@string/append_http_proxy_sum"
             app:title="@string/append_http_proxy" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_bot_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -278,9 +321,12 @@
             app:key="allowAccess"
             app:summary="@string/allow_access_sum"
             app:title="@string/allow_access" />
+        
     </PreferenceCategory>
+    
     <PreferenceCategory
         app:title="@string/cag_misc">
+        
         <moe.matsuri.nb4a.ui.UrlTestPreference
             android:layout="@layout/uwu_top"
             app:defaultValue="https://www.gstatic.com/generate_204"
@@ -288,6 +334,7 @@
             app:key="connectionTestURL"
             app:title="@string/connection_test_url"
             app:useSimpleSummaryProvider="true" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -295,6 +342,7 @@
             app:key="enableClashAPI"
             app:summary="@string/enable_clash_api_summary"
             app:title="@string/enable_clash_api" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -305,6 +353,7 @@
             app:key="networkChangeResetConnections"
             app:title="@string/network_change_reset_connections"
             app:useSimpleSummaryProvider="true" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -314,6 +363,7 @@
             app:key="wakeResetConnections"
             app:title="@string/wake_reset_connections"
             app:useSimpleSummaryProvider="true" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -322,6 +372,7 @@
             app:icon="@drawable/ic_action_lock_open"
             app:key="globalAllowInsecure"
             app:title="@string/global_allow_insecure" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_mid_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -330,6 +381,7 @@
             app:icon="@drawable/ic_certificate_outline"
             app:key="allowInsecureOnRequest"
             app:title="@string/allow_insecure_on_request_sum" />
+        
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="1.2"
@@ -339,6 +391,7 @@
             app:key="appTLSVersion"
             app:title="@string/app_tls_version"
             app:useSimpleSummaryProvider="true" />
+        
         <SwitchPreference
             android:layout="@layout/uwu_bot_switch"
             android:widgetLayout="@layout/uwu_switch"
@@ -347,5 +400,7 @@
             app:icon="@drawable/ic_toggle_switch"
             app:key="showBottomBar"
             app:title="@string/show_bottom_bar" />
+        
     </PreferenceCategory>
+    
 </PreferenceScreen>
