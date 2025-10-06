@@ -4,6 +4,9 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
+import java.util.Locale
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import androidx.core.app.ActivityCompat
@@ -61,6 +64,31 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
             Theme.applyNightTheme()
             true
         }
+
+        fun getLanguageDisplayName(code: String): String = run {
+            return when (code) {
+                "" -> getString(R.string.language_system_default)
+                "en-US" -> getString(R.string.language_en_display_name)
+                "zh-Hans" -> getString(R.string.language_zh_Hans_display_name)
+                else -> Locale.forLanguageTag(code).displayName // just a fallback name from Java
+            }
+        }
+        val appLanguage = findPreference<SimpleMenuPreference>(Key.APP_LANGUAGE)!!
+        val locale = when (val value = AppCompatDelegate.getApplicationLocales().toLanguageTags()) {
+            // https://stackoverflow.com/questions/13291578/how-to-localize-an-android-app-in-indonesian-language
+            // Some old Android versions still return "in".
+            "in" -> "id"
+            else -> value
+        }
+        appLanguage.summary = getLanguageDisplayName(locale)
+        appLanguage.value = if (locale in resources.getStringArray(R.array.language_value)) locale else ""
+        appLanguage.setOnPreferenceChangeListener { _, newValue ->
+            newValue as String
+            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(newValue))
+            // UI 会在 Activity 重启后自动更新，无需手动重载
+            true
+        }
+        
         val mixedPort = findPreference<EditTextPreference>(Key.MIXED_PORT)!!
         val serviceMode = findPreference<Preference>(Key.SERVICE_MODE)!!
         val allowAccess = findPreference<Preference>(Key.ALLOW_ACCESS)!!
