@@ -73,8 +73,6 @@
         <item name="windowNoTitle">true</item>
         <item name="colorBg">?colorSurface</item>
         <item name="colorCard">?colorSurfaceContainerLow</item>
-        <item name="colorBgSimpleMenu">?colorSurfaceContainerHigh</item>
-        <item name="colorSimpleMenuSelected">@color/simple_menu_color_selected</item>
         <item name="colorOnPrimaryFixed">@color/magenta_onPrimaryFixed</item>
         <item name="colorOnPrimaryFixedVariant">@color/magenta_onPrimaryFixedVariant</item>
         <item name="colorOnSecondaryFixed">@color/magenta_onSecondaryFixed</item>
@@ -157,8 +155,6 @@
         <item name="windowNoTitle">true</item>
         <item name="colorBg">?colorSurface</item>
         <item name="colorCard">?colorSurfaceContainerLow</item>
-        <item name="colorBgSimpleMenu">?colorSurfaceContainerHigh</item>
-        <item name="colorSimpleMenuSelected">@color/simple_menu_color_selected</item>
         <item name="colorOnPrimaryFixed">@color/magenta_onPrimaryFixed</item>
         <item name="colorOnPrimaryFixedVariant">@color/magenta_onPrimaryFixedVariant</item>
         <item name="colorOnSecondaryFixed">@color/magenta_onSecondaryFixed</item>
