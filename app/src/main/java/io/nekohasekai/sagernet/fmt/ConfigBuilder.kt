@@ -199,6 +199,7 @@ fun buildConfig(
             if (isVPN) inbounds.add(Inbound_TunOptions().apply {
                 type = "tun"
                 tag = "tun-in"
+                interface_name = "tun0"
                 stack = when (DataStore.tunImplementation) {
                     TunImplementation.GVISOR -> "gvisor"
                     TunImplementation.SYSTEM -> "system"
@@ -209,6 +210,8 @@ fun buildConfig(
                 domain_strategy = genDomainStrategy(DataStore.resolveDestination)
                 sniff = needSniff
                 sniff_override_destination = needSniffOverride
+                auto_route = true
+                strict_route = true
                 when (ipv6Mode) {
                     IPv6Mode.DISABLE -> {
                         inet4_address = listOf(VpnService.PRIVATE_VLAN4_CLIENT + "/28")
@@ -240,6 +243,7 @@ fun buildConfig(
         // init routing object
         route = RouteOptions().apply {
             auto_detect_interface = true
+            override_android_vpn = true
             rules = mutableListOf()
             rule_set = mutableListOf()
         }
@@ -560,6 +564,11 @@ fun buildConfig(
                         if (useFakeDns) userDNSRuleList += makeDnsRuleObj().apply {
                             server = "dns-fake"
                             inbound = listOf("tun-in")
+                            query_type = listOf("A", "AAAA")
+                        } else {
+                            userDNSRuleList += makeDnsRuleObj().apply {
+                                server = "dns-local"
+                            }
                         }
                         userDNSRuleList += makeDnsRuleObj().apply {
                             server = "dns-remote"
@@ -722,6 +731,7 @@ fun buildConfig(
                     inbound = listOf("tun-in")
                     server = "dns-fake"
                     disable_cache = true
+                    query_type = listOf("A", "AAAA")
                 })
             }
             // avoid loopback
