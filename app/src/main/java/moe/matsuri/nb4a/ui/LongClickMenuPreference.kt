@@ -4,12 +4,20 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.View
 import androidx.preference.PreferenceViewHolder
+import com.takisoft.preferencex.SimpleMenuPreference
 import io.nekohasekai.sagernet.R
 
-class LongClickMenuPreference
-@JvmOverloads constructor(
-    context: Context, attrs: AttributeSet? = null, defStyle: Int = R.attr.dropdownPreferenceStyle
-) : SimpleMenuPreference(context, attrs, defStyle, 0) {
+class LongClickMenuPreference : SimpleMenuPreference {
+
+    constructor(context: Context?) : super(context)
+    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
+    constructor(context: Context?, attrs: AttributeSet?, defStyle: Int) : super(
+        context, attrs, defStyle
+    )
+
+    constructor(
+        context: Context?, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int
+    ) : super(context, attrs, defStyleAttr, defStyleRes)
     private var mLongClickListener: View.OnLongClickListener? = null
 
     override fun onBindViewHolder(holder: PreferenceViewHolder) {

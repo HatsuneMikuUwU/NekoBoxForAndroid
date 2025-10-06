@@ -37,7 +37,7 @@
             app:icon="@drawable/ic_settings_password"
             app:key="serverPassword"
             app:title="@string/password_opt" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             android:layout_height="fill_parent"
             app:defaultValue="https"

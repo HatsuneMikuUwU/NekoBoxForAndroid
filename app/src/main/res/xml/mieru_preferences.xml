@@ -25,7 +25,7 @@
             app:key="serverPort"
             app:title="@string/server_port"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="TCP"
             app:entries="@array/mieru_protocol"

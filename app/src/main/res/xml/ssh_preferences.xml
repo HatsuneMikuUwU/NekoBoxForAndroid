@@ -31,7 +31,7 @@
             app:key="serverUsername"
             app:title="@string/username"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:entries="@array/ssh_auth_type"
             app:entryValues="@array/int_array_3"

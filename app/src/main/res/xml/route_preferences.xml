@@ -50,7 +50,7 @@
             app:key="routeSourcePort"
             app:title="sourcePort"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:entries="@array/route_protocol_entry"
             app:entryValues="@array/route_protocol_value"

@@ -13,7 +13,7 @@
         app:useSimpleSummaryProvider="true" />
     <PreferenceCategory
         app:title="@string/proxy_cat">
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_top"
             app:defaultValue="2"
             app:entries="@array/socks_versions"

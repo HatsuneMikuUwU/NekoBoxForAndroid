@@ -13,7 +13,7 @@
         app:useSimpleSummaryProvider="true" />
     <PreferenceCategory
         app:title="@string/uwu_general_settings_title">
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_sin"
             app:defaultValue="2"
             app:entries="@array/hysteria_version"
@@ -44,7 +44,7 @@
             app:key="serverObfs"
             app:title="@string/hysteria_obfs"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:entries="@array/hysteria_auth_type"
             app:entryValues="@array/int_array_3"
@@ -58,7 +58,7 @@
             app:icon="@drawable/ic_settings_password"
             app:key="serverPassword"
             app:title="@string/hysteria_auth_payload" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="https"
             app:entries="@array/hysteria_protocol"

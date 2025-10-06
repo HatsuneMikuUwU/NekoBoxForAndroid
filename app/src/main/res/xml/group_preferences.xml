@@ -13,7 +13,7 @@
         app:useSimpleSummaryProvider="true" />
     <PreferenceCategory
         app:title="@string/uwu_general_settings_title">
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_top"
             app:defaultValue="0"
             app:entries="@array/group_types"
@@ -22,7 +22,7 @@
             app:key="groupType"
             app:title="@string/group_type"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="0"
             app:entries="@array/group_orders"

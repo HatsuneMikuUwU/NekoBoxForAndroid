@@ -44,7 +44,7 @@
             app:key="serverAllowInsecure"
             app:summary="@string/allow_insecure_sum"
             app:title="@string/allow_insecure" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="none"
             app:entries="@array/trojan_go_networks_entry"
@@ -53,7 +53,7 @@
             app:key="serverNetwork"
             app:title="@string/network"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_bot"
             app:entries="@array/trojan_go_security_entry"
             app:entryValues="@array/trojan_go_security_value"
@@ -81,7 +81,7 @@
     <PreferenceCategory
         app:key="serverSsCategory"
         app:title="@string/ss_cat">
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_top"
             app:defaultValue="AES-128-GCM"
             app:entries="@array/trojan_go_methods"

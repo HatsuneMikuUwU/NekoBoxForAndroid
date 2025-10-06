@@ -5,13 +5,20 @@ import android.util.AttributeSet
 import io.nekohasekai.sagernet.R
 import io.nekohasekai.sagernet.database.DataStore
 import io.nekohasekai.sagernet.database.ProfileManager
-import moe.matsuri.nb4a.ui.SimpleMenuPreference
+import com.takisoft.preferencex.SimpleMenuPreference
 
-class OutboundPreference
-@JvmOverloads constructor(
-    context: Context, attrs: AttributeSet? = null, defStyle: Int = R.attr.dropdownPreferenceStyle
-) : SimpleMenuPreference(context, attrs, defStyle, 0) {
+class OutboundPreference : SimpleMenuPreference {
 
+    constructor(context: Context?) : super(context)
+    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
+    constructor(context: Context?, attrs: AttributeSet?, defStyle: Int) : super(
+        context, attrs, defStyle
+    )
+
+    constructor(
+        context: Context?, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int
+    ) : super(context, attrs, defStyleAttr, defStyleRes)
+    
     init {
         setEntries(R.array.outbound_entry)
         setEntryValues(R.array.outbound_value)

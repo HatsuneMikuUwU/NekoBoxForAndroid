@@ -10,7 +10,7 @@ import io.nekohasekai.sagernet.database.DataStore
 import io.nekohasekai.sagernet.database.preference.EditTextPreferenceModifiers
 import io.nekohasekai.sagernet.fmt.trojan_go.TrojanGoBean
 import io.nekohasekai.sagernet.ktx.app
-import moe.matsuri.nb4a.ui.SimpleMenuPreference
+import com.takisoft.preferencex.SimpleMenuPreference
 
 class TrojanGoSettingsActivity : ProfileSettingsActivity<TrojanGoBean>() {
 

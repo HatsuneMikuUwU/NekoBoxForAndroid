@@ -30,7 +30,7 @@ import io.nekohasekai.sagernet.ktx.runOnDefaultDispatcher
 import io.nekohasekai.sagernet.widget.ListListener
 import io.nekohasekai.sagernet.widget.OutboundPreference
 import kotlinx.parcelize.Parcelize
-import moe.matsuri.nb4a.ui.SimpleMenuPreference
+import com.takisoft.preferencex.SimpleMenuPreference
 
 @Suppress("UNCHECKED_CAST")
 class GroupSettingsActivity(

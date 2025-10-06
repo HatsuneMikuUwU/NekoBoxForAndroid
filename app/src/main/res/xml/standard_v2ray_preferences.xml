@@ -49,7 +49,7 @@
             app:key="alterId"
             app:title="@string/alter_id"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:entries="@array/vmess_encryption_value"
             app:entryValues="@array/vmess_encryption_value"
@@ -57,7 +57,7 @@
             app:key="encryption"
             app:title="@string/encryption"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:entries="@array/packet_encoding_entry"
             app:entryValues="@array/int_array_3"
@@ -65,7 +65,7 @@
             app:key="packetEncoding"
             app:title="@string/packet_encoding"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:entries="@array/networks_value"
             app:entryValues="@array/networks_value"
@@ -85,7 +85,7 @@
             app:key="path"
             app:title="@string/http_path"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_bot"
             app:entries="@array/transport_layer_encryption_value"
             app:entryValues="@array/transport_layer_encryption_value"
@@ -143,7 +143,7 @@
     <PreferenceCategory
         app:key="serverTlsCamouflageCategory"
         app:title="@string/tls_camouflage_settings">
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_top"
             app:defaultValue=""
             app:entries="@array/utls_fingerprint_entry"
@@ -175,7 +175,7 @@
             app:key="enableMux"
             app:summary="@string/mux_sum"
             app:title="@string/enable_mux" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="0"
             app:entries="@array/mux_type"
