@@ -63,6 +63,9 @@ dependencies {
     implementation("com.google.android.material:material:1.8.0")
     implementation("com.google.code.gson:gson:2.9.0")
 
+    implementation("com.takisoft.preferencex:preferencex:1.1.0")
+    implementation("com.takisoft.preferencex:preferencex-simplemenu:1.1.0")
+
     implementation("com.github.jenly1314:zxing-lite:2.1.1")
     implementation("com.blacksquircle.ui:editorkit:2.6.0")
     implementation("com.blacksquircle.ui:language-base:2.6.0")
