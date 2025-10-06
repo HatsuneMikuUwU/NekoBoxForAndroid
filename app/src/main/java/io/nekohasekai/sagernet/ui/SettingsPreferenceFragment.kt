@@ -9,7 +9,9 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.ActivityCompat
 import androidx.core.os.LocaleListCompat
-import androidx.preference.*
+import androidx.preference.EditTextPreference
+import androidx.preference.Preference
+import androidx.preference.SwitchPreference
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import io.nekohasekai.sagernet.Key
 import io.nekohasekai.sagernet.R
@@ -25,7 +27,8 @@ import moe.matsuri.nb4a.ui.ColorPickerPreference
 import moe.matsuri.nb4a.ui.EditConfigPreference
 import moe.matsuri.nb4a.ui.LongClickListPreference
 import moe.matsuri.nb4a.ui.MTUPreference
-import moe.matsuri.nb4a.ui.SimpleMenuPreference
+import com.takisoft.preferencex.PreferenceFragmentCompat
+import com.takisoft.preferencex.SimpleMenuPreference
 import java.util.Locale
 
 class SettingsPreferenceFragment : PreferenceFragmentCompat() {
@@ -43,7 +46,7 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         true
     }
 
-    override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+    override fun onCreatePreferencesFix(savedInstanceState: Bundle?, rootKey: String?) {
         preferenceManager.preferenceDataStore = DataStore.configurationStore
         DataStore.initGlobal()
         addPreferencesFromResource(R.xml.global_preferences)
@@ -69,22 +72,27 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         }
 
         // Language switcher feature
-        fun getLanguageDisplayName(code: String): String {
+        fun getLanguageDisplayName(code: String): String = run {
             return when (code) {
                 "" -> getString(R.string.language_system_default)
                 "en-US" -> getString(R.string.language_en_display_name)
-                "zh-Hans" -> getString(R.string.language_zh_Hans_display_name)
+                "id" -> getString(R.string.language_id_display_name)
+                "zh-Hans-CN" -> getString(R.string.language_zh_Hans_CN_display_name)
                 else -> Locale.forLanguageTag(code).displayName
             }
         }
-
         val appLanguage = findPreference<SimpleMenuPreference>(Key.APP_LANGUAGE)!!
-        val localeTag = AppCompatDelegate.getApplicationLocales().toLanguageTags().ifEmpty { "" }
-        val currentLocale = if (localeTag == "in") "id" else localeTag
-        appLanguage.summary = getLanguageDisplayName(currentLocale)
-        appLanguage.value = if (currentLocale in resources.getStringArray(R.array.language_value)) currentLocale else ""
+        val locale = when (val value = AppCompatDelegate.getApplicationLocales().toLanguageTags()) {
+            "in" -> "id"
+            else -> value
+        }
+        appLanguage.summary = getLanguageDisplayName(locale)
+        appLanguage.value = if (locale in resources.getStringArray(R.array.language_value)) locale else ""
         appLanguage.setOnPreferenceChangeListener { _, newValue ->
-            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(newValue as String))
+            newValue as String
+            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(newValue))
+            appLanguage.summary = getLanguageDisplayName(newValue)
+            appLanguage.value = newValue
             true
         }
 

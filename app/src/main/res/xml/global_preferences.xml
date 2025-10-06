@@ -24,7 +24,7 @@
             app:key="appTheme"
             app:summary="@string/uwu_theme_settings_summary" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="0"
             app:entries="@array/night_mode"
@@ -34,7 +34,7 @@
             app:title="@string/night_mode"
             app:useSimpleSummaryProvider="true" />
 
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_bot"
             app:defaultValue=""
             app:entries="@array/language_entry"
@@ -58,7 +58,7 @@
             app:summary="@string/auto_connect_summary"
             app:title="@string/auto_connect" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="vpn"
             app:entries="@array/service_modes"
@@ -68,7 +68,7 @@
             app:title="@string/service_mode"
             app:useSimpleSummaryProvider="true" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="2"
             app:entries="@array/tun_implementation"
@@ -87,7 +87,7 @@
             app:key="mtu"
             app:title="@string/mtu" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="1000"
             app:entries="@array/notification_entry"
@@ -197,7 +197,7 @@
             app:key="bypassLanInCore"
             app:title="@string/bypass_lan_in_core" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="1"
             app:entries="@array/traffic_sniffing_values"
@@ -215,7 +215,7 @@
             app:summary="@string/resolve_destination_summary"
             app:title="@string/resolve_destination" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="0"
             app:entries="@array/ipv6_mode"
@@ -225,7 +225,7 @@
             app:title="@string/ipv6"
             app:useSimpleSummaryProvider="true" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_bot"
             app:defaultValue="0"
             app:entries="@array/rules_dat_provider"
@@ -248,7 +248,7 @@
             app:title="@string/remote_dns"
             app:useSimpleSummaryProvider="true" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="auto"
             app:entries="@array/dns_network_select"
@@ -266,7 +266,7 @@
             app:title="@string/direct_dns"
             app:useSimpleSummaryProvider="true" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="auto"
             app:entries="@array/dns_network_select"
@@ -276,7 +276,7 @@
             app:title="@string/domain_strategy_for_direct"
             app:useSimpleSummaryProvider="true" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="auto"
             app:entries="@array/dns_network_select"
@@ -392,7 +392,7 @@
             app:key="allowInsecureOnRequest"
             app:title="@string/allow_insecure_on_request_sum" />
         
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+        <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="1.2"
             app:entries="@array/app_tls_version"
