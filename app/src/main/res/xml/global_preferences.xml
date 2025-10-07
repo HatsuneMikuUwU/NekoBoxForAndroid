@@ -207,7 +207,7 @@
         
         <com.takisoft.preferencex.SimpleMenuPreference
             android:layout="@layout/uwu_mid"
-            app:defaultValue="0"
+            app:defaultValue="2"
             app:entries="@array/ipv6_mode"
             app:entryValues="@array/int_array_4"
             app:icon="@drawable/ic_image_looks_6"
