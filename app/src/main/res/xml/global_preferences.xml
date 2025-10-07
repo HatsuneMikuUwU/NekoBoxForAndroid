@@ -232,7 +232,7 @@
         
         <EditTextPreference
             android:layout="@layout/uwu_top"
-            app:defaultValue="https://dcloudflare-dns.com/dns-query"
+            app:defaultValue="https://cloudflare-dns.com/dns-query"
             app:icon="@drawable/ic_action_dns"
             app:key="remoteDns"
             app:title="@string/remote_dns"
