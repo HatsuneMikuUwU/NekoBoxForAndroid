@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
+    <attr name="colorOnPrimaryFixed" format="color" />
+    <attr name="colorOnPrimaryFixedVariant" format="color" />
+    <attr name="colorOnSecondaryFixed" format="color" />
+    <attr name="colorOnSecondaryFixedVariant" format="color" />
+    <attr name="colorOnTertiaryFixed" format="color" />
+    <attr name="colorOnTertiaryFixedVariant" format="color" />
+    <attr name="colorPrimaryFixed" format="color" />
+    <attr name="colorPrimaryFixedDim" format="color" />
+    <attr name="colorSecondaryFixed" format="color" />
+    <attr name="colorSecondaryFixedDim" format="color" />
+    <attr name="colorSurfaceBright" format="color" />
+    <attr name="colorSurfaceContainer" format="color" />
+    <attr name="colorSurfaceContainerHigh" format="color" />
+    <attr name="colorSurfaceContainerHighest" format="color" />
+    <attr name="colorSurfaceContainerLow" format="color" />
+    <attr name="colorSurfaceContainerLowest" format="color" />
+    <attr name="colorSurfaceDim" format="color" />
+    <attr name="colorTertiaryFixed" format="color" />
+    <attr name="colorTertiaryFixedDim" format="color" />
+
     <attr name="colorBg" format="color" />
     <attr name="colorIcon" format="color" />
     <attr name="colorCard" format="color" />
+    <attr name="activeIndicatorLabelPadding" format="dimension" />
+    <attr name="colorBgSimpleMenu" format="color" />
+    <attr name="colorSimpleMenuSelected" format="color" />
     
     <attr name="colorMaterial100" format="color" />
     <attr name="colorMaterial300" format="color" />
