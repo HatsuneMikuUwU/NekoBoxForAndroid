@@ -64,7 +64,7 @@ public class SplashActivity extends ThemedActivity {
 								
 								try{
 											
-										sleep(3000); /*this 3000 is delay as ms @_@ */
+										sleep(2000);
 											
 								}
 								catch (Exception e){
@@ -74,8 +74,8 @@ public class SplashActivity extends ThemedActivity {
 								finally{
 											
 									i.setClass(getApplicationContext(), MainActivity.class);
-/*this HomeActivity is which activity you want to go*/
-									startActivity(i); /*i is name of intent*/
+									
+									startActivity(i);
 									
 								}
 					}
