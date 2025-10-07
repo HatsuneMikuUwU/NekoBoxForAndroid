@@ -2,6 +2,7 @@
 
 package io.nekohasekai.sagernet.ktx
 
+import android.os.Build
 import io.nekohasekai.sagernet.BuildConfig
 import io.nekohasekai.sagernet.fmt.AbstractBean
 import moe.matsuri.nb4a.utils.NGUtil
@@ -63,4 +64,11 @@ fun mkPort(): Int {
     return port
 }
 
-const val USER_AGENT = "NekoBox/Android/" + BuildConfig.VERSION_NAME + " (Prefer ClashMeta Format)"
+// 動態生成 User-Agent，包含 App 版本、公開版本號和 CPU 架構
+val USER_AGENT: String by lazy {
+    val appVersion = BuildConfig.VERSION_NAME
+    val osVersion = Build.VERSION.RELEASE
+    val arch = Build.SUPPORTED_ABIS[0]
+
+    "MikuBox/$appVersion (Android $osVersion, $arch) (Prefer ClashMeta Format)"
+}
