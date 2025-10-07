@@ -210,4 +210,12 @@
     <color name="material_dynamic_tertiary90">@color/m3_ref_palette_dynamic_tertiary90</color>
     <color name="material_dynamic_tertiary95">@color/m3_ref_palette_dynamic_tertiary95</color>
     <color name="material_dynamic_tertiary99">@color/m3_ref_palette_dynamic_tertiary99</color>
+    <color name="m3_sys_color_dynamic_dark_error">@android:color/system_error_dark</color>
+    <color name="m3_sys_color_dynamic_dark_error_container">@android:color/system_error_container_dark</color>
+    <color name="m3_sys_color_dynamic_dark_on_error">@android:color/system_on_error_dark</color>
+    <color name="m3_sys_color_dynamic_dark_on_error_container">@android:color/system_on_error_container_dark</color>
+    <color name="m3_sys_color_dynamic_light_error">@android:color/system_error_light</color>
+    <color name="m3_sys_color_dynamic_light_error_container">@android:color/system_error_container_light</color>
+    <color name="m3_sys_color_dynamic_light_on_error">@android:color/system_on_error_light</color>
+    <color name="m3_sys_color_dynamic_light_on_error_container">@android:color/system_on_error_container_light</color>
 </resources>
