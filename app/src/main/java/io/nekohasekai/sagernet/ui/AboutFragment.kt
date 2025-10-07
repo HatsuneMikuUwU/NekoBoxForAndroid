@@ -177,17 +177,6 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                 .build())
                         .addItem(
                             MaterialAboutActionItem.Builder()
-                                .icon(R.drawable.ic_qu_shadowsocks_foreground)
-                                .text(R.string.uwu_matsuridayo)
-                                .subText(R.string.telegram)
-                                .setOnClickAction {
-                                    requireContext().launchCustomTab(
-                                        "https://t.me/MatsuriDayo"
-                                    )
-                                }
-                                .build())
-                        .addItem(
-                            MaterialAboutActionItem.Builder()
                                 .icon(R.drawable.ic_github)
                                 .text(R.string.uwu_mikubox)
                                 .subText(R.string.github)
@@ -206,6 +195,17 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
                                         "https://t.me/uwuowoumuChannel"
+                                    )
+                                }
+                                .build())
+                        .addItem(
+                            MaterialAboutActionItem.Builder()
+                                .icon(R.drawable.ic_qu_shadowsocks_foreground)
+                                .text(R.string.uwu_hsskyboy)
+                                .subText(R.string.telegram)
+                                .setOnClickAction {
+                                    requireContext().launchCustomTab(
+                                        "https://t.me/np_nbcn"
                                     )
                                 }
                                 .build())
