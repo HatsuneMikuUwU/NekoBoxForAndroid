@@ -515,4 +515,19 @@
 HatsuneMikuUwU 开发组"</string>
     <string name="uwu_theme_settings_summary">自定义强调色</string>
     <string name="uwu_theme_settings_title">主题设置</string>
+
+    <!-- miku-->
+    <string name="uwu_miku_gender_title">性别</string>
+    <string name="uwu_miku_gender_summary">女性</string>
+    <string name="uwu_miku_birthday_title">生日</string>
+    <string name="uwu_miku_birthday_summary">8 月 31 日</string>
+    <string name="uwu_miku_age_title">年龄</string>
+    <string name="uwu_miku_age_summary">16</string>
+    <string name="uwu_miku_voice_title">声源</string>
+    <string name="uwu_miku_voice_summary">藤田咲</string>
+    <string name="uwu_miku_weight_title">体重</string>
+    <string name="uwu_miku_weight_summary">42 公斤</string>
+    <string name="uwu_miku_height_title">身高</string>
+    <string name="uwu_miku_height_summary">158 厘米</string>
+    
 </resources>

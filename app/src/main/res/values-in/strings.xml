@@ -55,7 +55,7 @@
         \nLangsung: %3$s↑ %4$s↓</string>
     <string name="speed">%s/s</string>
     <string name="connection_test_testing">Menguji…</string>
-    <string name="connection_test_available">Koneksi berhasil: Jabat tangan HTTPS membutuhkan %dms</string>
+    <string name="connection_test_available">Berhasil: Jabat tangan HTTPS membutuhkan %dms</string>
     <string name="connection_test_error">Gagal: %s</string>
     <string name="connection_test_fail">Jaringan tidak tersedia</string>
     <string name="connection_test_error_status_code">Kode galat: #%d</string>
@@ -482,23 +482,39 @@
     <string name="reset_settings_message">Pulihkan pengaturan default, tetapi data seperti node dan grup akan disimpan. Untuk menghapus data sepenuhnya, silakan hapus data aplikasi langsung di pengaturan sistem.</string>
     <string name="minimize">Minimalkan</string>
 
-    <string name="uwu_about_miku_summary">Hatsune Miku adalah penyanyi virtual yang dibuat oleh Crypton Future Media berdasarkan Vocaloid, dengan nama kode CV01. Dikenal dengan kuncir dua panjang berwarna biru kehijauan dan suaranya yang jernih, ia digambarkan sebagai seorang gadis berusia 16 tahun dan merupakan idola virtual yang terkenal di dunia, aktif dalam musik, konser, dan animasi, dan sangat dicintai oleh para penggemar.</string>
+    <!-- uwu-->
+    <string name="uwu_about_miku_summary">Hatsune Miku adalah penyanyi virtual berbasis Vocaloid yang dirilis oleh Crypton Future Media, dengan nama kode CV01. Dikenal dengan rambut twintail panjang berwarna biru kehijauan dan suaranya yang jernih, dia adalah seorang gadis berusia 16 tahun dan idola virtual yang terkenal secara global. Dia aktif dalam musik, konser, dan anime, serta sangat dicintai oleh para penggemarnya.</string>  
     <string name="uwu_about_miku_title">Siapa Hatsune Miku?</string>
     <string name="uwu_about_version_summary">Klik di sini atau ikon panah untuk mempelajari lebih lanjut tentang aplikasi.</string>
     <string name="uwu_about_version_title">Tentang Aplikasi</string>
-    <string name="uwu_banner_settings_summary">"Selamat datang di menu pengaturan,
-Silakan pilih opsi fungsional
-apa pun yang Anda butuhkan
-dan harus Anda miliki"</string>
-    <string name="uwu_banner_settings_title">Halo…</string>
+    <string name="uwu_banner_settings_summary">"Selamat datang di menu
+pengaturan, silakan
+pilih opsi mana pun
+yang Anda butuhkan."</string>
+    <string name="uwu_banner_settings_title">Halo disana…</string>
     <string name="uwu_banner_summary">Ayo bernyanyi bersamaku!</string>
-    <string name="uwu_banner_title">Hai, tuan</string>
+    <string name="uwu_banner_title">Hai, sayang</string>
     <string name="uwu_general_settings_title">Pengaturan Umum</string>
     <string name="uwu_maintainer_summary">Tim Pengembang HatsuneMikuUwU</string>
-    <string name="uwu_maintainer_title">Aplikasi ini dikelola oleh tim berikut</string>
+    <string name="uwu_maintainer_title">Aplikasi ini dalam pemeliharaan</string>
     <string name="uwu_splash_summary">Versi 1.4.0 (225)</string>
-    <string name="uwu_splash_title">"Dibuat dengan cinta ❤️
-Tim Pengembang HatsuneMikuUwU"</string>
-    <string name="uwu_theme_settings_summary">Kustomisasi warna aksen</string>
+    <string name="uwu_splash_title">"Dibuat dengan ❤️
+Oleh Tim Pengembang HatsuneMikuUwU"</string>
+    <string name="uwu_theme_settings_summary">Pilih sendiri warna aksennya</string>
     <string name="uwu_theme_settings_title">Pengaturan Tema</string>
+
+    <!-- miku-->
+    <string name="uwu_miku_gender_title">Jenis Kelamin</string>
+    <string name="uwu_miku_gender_summary">Perempuan</string>
+    <string name="uwu_miku_birthday_title">Ulang Tahun</string>
+    <string name="uwu_miku_birthday_summary">31 Agustus</string>
+    <string name="uwu_miku_age_title">Usia</string>
+    <string name="uwu_miku_age_summary">16</string>
+    <string name="uwu_miku_voice_title">Suara</string>
+    <string name="uwu_miku_voice_summary">Saki Fujita</string>
+    <string name="uwu_miku_weight_title">Berat</string>
+    <string name="uwu_miku_weight_summary">42 kg</string>
+    <string name="uwu_miku_height_title">Tinggi</string>
+    <string name="uwu_miku_height_summary">158 cm</string>
+
 </resources>

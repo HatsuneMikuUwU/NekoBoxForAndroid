@@ -596,6 +596,20 @@ By HatsuneMikuUwU Development"</string>
     <string name="uwu_theme_settings_title">Theme settings</string>
     <string name="uwu_banner_settings_title">Hello there...</string>
 
+    <!-- miku-->
+    <string name="uwu_miku_gender_title">Gender </string>
+    <string name="uwu_miku_gender_summary">Female</string>
+    <string name="uwu_miku_birthday_title">Birthday </string>
+    <string name="uwu_miku_birthday_summary">August 31</string>
+    <string name="uwu_miku_age_title">Age </string>
+    <string name="uwu_miku_age_summary">16</string>
+    <string name="uwu_miku_voice_title">Voice </string>
+    <string name="uwu_miku_voice_summary">Saki Fujita</string>
+    <string name="uwu_miku_weight_title">Weight </string>
+    <string name="uwu_miku_weight_summary">42 kg</string>
+    <string name="uwu_miku_height_title">Height </string>
+    <string name="uwu_miku_height_summary">158 cm</string>
+
     <string name="uwu_nekobox">NekoBox</string>
     <string name="uwu_mikubox">MikuBox</string>
     <string name="uwu_hatsune">Hatsune</string>

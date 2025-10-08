@@ -52,7 +52,7 @@
         <TextView
             android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
             android:textSize="17.0sp"
-            android:textColor="?attr/colorOnSurface"
+            android:textColor="?android:textColorPrimary"
             android:ellipsize="marquee"
             android:id="@android:id/title"
             android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
         <TextView
             android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
             android:textSize="14.0sp"
-            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textColor="?android:textColorSecondary"
             android:ellipsize="marquee"
             android:id="@android:id/summary"
             android:layout_width="wrap_content"
