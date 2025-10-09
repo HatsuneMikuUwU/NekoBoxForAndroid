@@ -516,6 +516,12 @@ HatsuneMikuUwU 开发组"</string>
     <string name="uwu_theme_settings_summary">自定义强调色</string>
     <string name="uwu_theme_settings_title">主题设置</string>
 
+    <string name="uwu_welcome_title">欢迎来到</string>
+    <string name="uwu_welcome_summary_1">MikuBox, 
+    一款适用于 Android 的 Sing-box 客户端 </string>
+    <string name="uwu_welcome_summary_2">Android 上的 Sing-box 客户端, 采用 UwU 开发的 Miku UI </string>
+    <string name="uwu_welcome_summary_3">使用 Heart、Gradle、Kotlin、Java 等语言制作 </string>
+
     <!-- miku-->
     <string name="uwu_miku_gender_title">性别</string>
     <string name="uwu_miku_gender_summary">女性</string>

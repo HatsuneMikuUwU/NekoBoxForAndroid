@@ -574,6 +574,7 @@
     <string name="reset_settings">Restore default settings</string>
     <string name="reset_settings_message">Restore default settings, but data such as nodes and groups will be retained. To completely clear data, clear application data directly in the system settings.</string>
     <string name="minimize">Minimize</string>
+    <string name="donate_to_original_author">Donate to original author</string>
     
     <!-- uwu -->
     <string name="uwu_about_miku_summary">Hatsune Miku is a Vocaloid-based virtual singer released by Crypton Future Media, code-named CV01. Known for her long turquoise twintails and clear voice, she is a 16-year-old girl and a globally renowned virtual idol. She is active in music, concerts, and anime, and is deeply loved by her fans.</string>
@@ -620,7 +621,8 @@ By HatsuneMikuUwU Development"</string>
     <string name="uwu_start">Start</string>
 
     <string name="uwu_welcome_title">Welcome to</string>
-    <string name="uwu_welcome_summary_1">MikuBox, A sing-box client for Android.</string>
+    <string name="uwu_welcome_summary_1">MikuBox
+    A sing-box client for Android.</string>
     <string name="uwu_welcome_summary_2">Sing-box client for Android With a Miku UI style from the UwU development.</string>
     <string name="uwu_welcome_summary_3">Made with Heart, Gradle, Kotlin, Java code and more.</string>
     
