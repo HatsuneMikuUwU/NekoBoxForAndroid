@@ -219,7 +219,7 @@
             android:layout="@layout/uwu_bot"
             app:defaultValue="0"
             app:entries="@array/rules_dat_provider"
-            app:entryValues="@array/int_array_4"
+            app:entryValues="@array/int_array_5"
             app:icon="@drawable/ic_baseline_rule_folder_24"
             app:key="rulesProvider"
             app:title="@string/route_rules_provider"
