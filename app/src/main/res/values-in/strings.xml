@@ -517,4 +517,13 @@ Oleh Tim Pengembang HatsuneMikuUwU"</string>
     <string name="uwu_miku_height_title">Tinggi</string>
     <string name="uwu_miku_height_summary">158 cm</string>
 
+    <string name="uwu_skip">Lewati</string>
+    <string name="uwu_next">Berikutnya</string>
+    <string name="uwu_start">Mulai</string>
+
+    <string name="uwu_welcome_title">Selamat datang di</string>
+    <string name="uwu_welcome_summary_1">MikuBox, klien sing-box untuk Android.</string>
+    <string name="uwu_welcome_summary_2">Klien Sing-box untuk Android dengan gaya UI Miku dari tim pengembang UwU.</string>
+    <string name="uwu_welcome_summary_3">Dibuat dengan Cinta, Gradle, Kotlin, kode Java, dan lainnya.</string>
+
 </resources>

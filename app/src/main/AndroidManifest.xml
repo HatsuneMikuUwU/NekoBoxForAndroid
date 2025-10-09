@@ -71,7 +71,7 @@
             android:configChanges="uiMode" />
 
         <activity
-            android:name="com.neko.splash.app.SplashActivity"
+            android:name="com.neko.welcome.app.WelcomeActivity"
             android:exported="true"
             android:configChanges="uiMode">
             <intent-filter>
@@ -159,6 +159,9 @@
                 android:name="android.app.shortcuts"
                 android:resource="@xml/shortcuts" />
         </activity>
+        <activity
+            android:name="com.neko.splash.app.SplashActivity"
+            android:configChanges="uiMode" />
         <activity
             android:name="io.nekohasekai.sagernet.ui.VpnRequestActivity"
             android:excludeFromRecents="true"

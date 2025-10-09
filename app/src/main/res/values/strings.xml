@@ -614,5 +614,14 @@ By HatsuneMikuUwU Development"</string>
     <string name="uwu_mikubox">MikuBox</string>
     <string name="uwu_hatsune">Hatsune</string>
     <string name="uwu_hsskyboy">NPCN</string>
+
+    <string name="uwu_skip">Skip</string>
+    <string name="uwu_next">Next</string>
+    <string name="uwu_start">Start</string>
+
+    <string name="uwu_welcome_title">Welcome to</string>
+    <string name="uwu_welcome_summary_1">MikuBox, A sing-box client for Android.</string>
+    <string name="uwu_welcome_summary_2">Sing-box client for Android With a Miku UI style from the UwU development.</string>
+    <string name="uwu_welcome_summary_3">Made with Heart, Gradle, Kotlin, Java code and more.</string>
     
 </resources>
