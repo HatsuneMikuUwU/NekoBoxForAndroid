@@ -85,6 +85,7 @@
         <item name="colorTertiaryFixed">@color/magenta_tertiaryFixed</item>
         <item name="colorTertiaryFixedDim">@color/magenta_tertiaryFixedDim</item>
         <item name="colorIcon">@color/white</item>
+        <item name="android:scrollbarSize">0.0dip</item>
     </style>
 
     <style name="Theme.SagerNet.Dialog" parent="@style/Theme.MaterialComponents.DayNight.Dialog.Alert">
@@ -167,6 +168,7 @@
         <item name="colorTertiaryFixed">@color/magenta_tertiaryFixed</item>
         <item name="colorTertiaryFixedDim">@color/magenta_tertiaryFixedDim</item>
         <item name="colorIcon">@color/white</item>
+        <item name="android:scrollbarSize">0.0dip</item>
     </style>
 
 

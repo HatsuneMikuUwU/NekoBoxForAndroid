@@ -94,9 +94,5 @@
         android:clipToPadding="false"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        app:fastScrollAutoHide="true"
-        app:fastScrollPopupTextColor="?attr/colorPrimary"
-        app:fastScrollThumbColor="?attr/colorPrimary"
-        app:fastScrollThumbInactiveColor="?attr/colorPrimary"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
