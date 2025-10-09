@@ -1,116 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<com.google.android.material.card.MaterialCardView
     android:gravity="bottom"
     android:orientation="vertical"
-    android:paddingLeft="16.0dip"
-    android:paddingTop="48.0dip"
-    android:paddingRight="16.0dip"
-    android:paddingBottom="8.0dip"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:minHeight="150.0dip"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16.0dip"
+    android:layout_marginTop="48.0dip"
+    android:layout_marginRight="16.0dip"
+    android:layout_marginBottom="8.0dip"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="28.0dip"
+    app:cardElevation="0.0dip"
+    app:strokeWidth="0.0dip"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.card.MaterialCardView
-        android:clipToPadding="false"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="180.0dip"
-        android:layout_marginLeft="0.0dip"
-        android:layout_marginTop="0.0dip"
-        android:layout_marginRight="0.0dip"
-        android:layout_marginBottom="0.0dip"
-        app:cardBackgroundColor="@android:color/transparent"
-        app:cardCornerRadius="28.0dip"
-        app:cardElevation="0.0dip">
-        <com.neko.blur.BlurImageView
+        android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            android:clipToPadding="false"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:src="@drawable/uwu_banner_image_about"
-            android:scaleType="centerCrop"
-            android:elevation="0.0dip"
-            app:blur_radius="2" />
-        <View
-            android:background="?android:textColorPrimaryInverse"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:alpha="0.2" />
-        <View
-            android:gravity="center_horizontal"
-            android:layout_gravity="center|top"
-            android:background="@drawable/uwu_bg_sin"
-            android:clickable="false"
-            android:layout_width="fill_parent"
-            android:layout_height="40.0dip"
-            android:layout_marginTop="-30.0dip"
-            android:backgroundTint="?attr/colorSurfaceContainerLow"
-            android:layout_marginHorizontal="75.0dip" />
-        <LinearLayout
-            android:gravity="center"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical"
+            android:layout_height="180.0dip"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginTop="0.0dip"
+            android:layout_marginRight="0.0dip"
+            android:layout_marginBottom="0.0dip"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="0.0dip">
+            <com.neko.blur.BlurImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/uwu_banner_image_about"
+                android:scaleType="centerCrop"
+                android:elevation="0.0dip"
+                app:blur_radius="2" />
+            <View
+                android:background="?android:textColorPrimaryInverse"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:alpha="0.2" />
+            <View
+                android:gravity="center_horizontal"
+                android:layout_gravity="center|top"
+                android:background="@drawable/uwu_bg_sin"
+                android:clickable="false"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="-30.0dip"
+                android:backgroundTint="?attr/colorSurfaceContainerLow"
+                android:layout_marginHorizontal="75.0dip" />
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_marginBottom="10.0dip">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100.0dip"
+                    android:layout_marginBottom="0.0dip"
+                    android:src="@drawable/uwu_miku_ui" />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10.0dip">
+                    <TextView
+                        android:textSize="30.0sp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:ellipsize="marquee"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MikuBox for Android"
+                        android:singleLine="true"
+                        android:fontFamily="@font/uwu_font_title" />
+                    <TextView
+                        android:textSize="30.0sp"
+                        android:textColor="?attr/colorPrimary"
+                        android:ellipsize="marquee"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MikuBox for Android"
+                        android:singleLine="true"
+                        android:maxLength="8"
+                        android:fontFamily="@font/uwu_font_title" />
+                </FrameLayout>
+                <TextView
+                    android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                    android:textSize="17.0sp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modified from NekoBox"
+                    android:maxLines="10"
+                    android:layout_below="@+id/title"
+                    android:layout_alignLeft="@+id/title"
+                    android:fontFamily="@font/uwu_font_summary"
+                    android:textAlignment="center"
+                    android:layout_alignStart="@+id/title" />
+            </LinearLayout>
+            <View
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom|center"
+                android:background="@drawable/uwu_bg_sin"
+                android:clickable="false"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginBottom="-30.0dip"
+                android:backgroundTint="?attr/colorSurfaceContainerLow"
+                android:layout_marginHorizontal="75.0dip" />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16.0dip"
-            android:layout_marginTop="5.0dip"
-            android:layout_marginRight="16.0dip"
-            android:layout_marginBottom="10.0dip">
-            <ImageView
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_marginRight="0.0dip"
+            android:layout_marginBottom="0.0dip"
+            app:cardBackgroundColor="?attr/colorSecondaryContainer"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="0.0dip">
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="100.0dip"
-                android:layout_marginBottom="0.0dip"
-                android:src="@drawable/uwu_miku_ui" />
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-10.0dip">
-                <TextView
-                    android:textSize="30.0sp"
-                    android:textColor="?attr/colorOnSurface"
-                    android:ellipsize="marquee"
-                    android:gravity="center_horizontal"
-                    android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MikuBox for Android"
-                    android:singleLine="true"
-                    android:fontFamily="@font/uwu_font_title" />
-                <TextView
-                    android:textSize="30.0sp"
-                    android:textColor="?attr/colorPrimary"
-                    android:ellipsize="marquee"
-                    android:gravity="center_horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MikuBox for Android"
-                    android:singleLine="true"
-                    android:maxLength="8"
-                    android:fontFamily="@font/uwu_font_title" />
-            </FrameLayout>
-            <TextView
-                android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
-                android:textSize="17.0sp"
-                android:textColor="?attr/colorOnSurface"
-                android:gravity="center_horizontal"
-                android:id="@+id/summary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Modified from NekoBox"
-                android:maxLines="10"
-                android:layout_below="@+id/title"
-                android:layout_alignLeft="@+id/title"
-                android:fontFamily="@font/uwu_font_summary"
-                android:textAlignment="center"
-                android:layout_alignStart="@+id/title" />
-        </LinearLayout>
-        <View
-            android:gravity="center_horizontal"
-            android:layout_gravity="bottom|center"
-            android:background="@drawable/uwu_bg_sin"
-            android:clickable="false"
-            android:layout_width="fill_parent"
-            android:layout_height="40.0dip"
-            android:layout_marginBottom="-30.0dip"
-            android:backgroundTint="?attr/colorSurfaceContainerLow"
-            android:layout_marginHorizontal="75.0dip" />
-    </com.google.android.material.card.MaterialCardView>
-</LinearLayout>
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:clipToPadding="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16.0dip"
+                        android:layout_marginBottom="16.0dip"
+                        android:layout_marginStart="16.0dip"
+                        android:layout_marginEnd="5.0dip">
+                        <com.neko.circleimageview.CircleImageView
+                            android:layout_width="50.0dip"
+                            android:layout_height="50.0dip"
+                            android:src="@drawable/uwu_banner_profile"
+                            app:civ_border_color="?attr/colorPrimary"
+                            app:civ_border_overlay="true"
+                            app:civ_border_width="3.0dip"
+                            app:civ_circle_background_color="@android:color/transparent" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:paddingTop="16.0dip"
+                        android:paddingBottom="16.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:layout_marginStart="5.0dip"
+                        android:layout_marginEnd="5.0dip">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                                android:textSize="17.0sp"
+                                android:textColor="?attr/colorOnSecondaryContainer"
+                                android:ellipsize="marquee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/uwu_banner_title"
+                                android:singleLine="false" />
+                            <com.neko.marquee.text.Greetings
+                                android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                                android:textSize="14.0sp"
+                                android:textColor="?attr/colorOnSecondaryContainer"
+                                android:ellipsize="marquee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:marqueeRepeatLimit="marquee_forever" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
