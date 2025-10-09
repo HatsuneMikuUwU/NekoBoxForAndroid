@@ -2,68 +2,41 @@ package com.neko.marquee.text
 
 import android.content.Context
 import android.util.AttributeSet
+import androidx.annotation.StringRes
 import androidx.appcompat.widget.AppCompatTextView
+import io.nekohasekai.sagernet.R
 import java.util.Calendar
 
 /**
- * A custom TextView that displays a greeting message based on the time of day
- * and the device's language setting.
+ * A custom TextView that displays a greeting message based on the time of day.
+ * It automatically uses the appropriate string resources for localization.
  */
-class Greetings : AppCompatTextView {
+class Greetings @JvmOverloads constructor(
+    context: Context, 
+    attrs: AttributeSet? = null, 
+    defStyleAttr: Int = 0
+): AppCompatTextView(context, attrs, defStyleAttr) {
 
-    constructor(context: Context) : super(context) {
-        updateGreeting()
+    init {updateGreeting()
     }
+    override fun onAttachedToWindow() {super.onAttachedToWindow()
+        updateGreeting() }
 
-    constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
-        updateGreeting()
-    }
-
-    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-        updateGreeting()
-    }
-
-    override fun isFocused(): Boolean {
-        return true // Ensures marquee effect works by making the TextView always appear focused
-    }
+    override fun isFocused(): Boolean {return true}
 
     /**
-     * Updates the text with a greeting message based on the current time and language.
+     * Updates the text with a greeting by selecting the correct string resource
+     * based on the current time of day.
      */
-    private fun updateGreeting() {
-        val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
-        val language = resources.configuration.locales[0].language
+    private fun updateGreeting() {val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
 
-        val greeting = when (language) {
-            "in" -> getIndonesianGreeting(hour)
-            "zh", "CN" -> getChineseGreeting(hour)
-            else -> getEnglishGreeting(hour)
+        @StringRes val greetingResId = when (hour) {
+            in 4..8 -> R.string.uwu_greeting_morning
+            in 9..15 -> R.string.uwu_greeting_afternoon
+            in 16..20 -> R.string.uwu_greeting_evening
+            in 21..23 -> R.string.uwu_greeting_night
+            else -> R.string.uwu_greeting_late_night
         }
-        text = greeting
-    }
-
-    /** Helper methods to get greetings in different languages **/
-    private fun getEnglishGreeting(hour: Int) = when (hour) {
-        in 4..8 -> "Good Morning..."
-        in 9..15 -> "Good Afternoon..."
-        in 16..20 -> "Good Evening..."
-        in 21..23 -> "Good Night..."
-        else -> "It's time to go to sleep..."
-    }
-
-    private fun getIndonesianGreeting(hour: Int) = when (hour) {
-        in 4..8 -> "Selamat Pagi..."
-        in 9..15 -> "Selamat Siang..."
-        in 16..20 -> "Selamat Sore..."
-        in 21..23 -> "Selamat Malam..."
-        else -> "Waktunya Tidur..."
-    }
-
-    private fun getChineseGreeting(hour: Int) = when (hour) {
-        in 4..8 -> "早安..."
-        in 9..15 -> "午安..."
-        in 16..20 -> "暮安..."
-        in 21..23 -> "晚安..."
-        else -> "该去睡觉啦 ..."
+        setText(greetingResId)
     }
 }

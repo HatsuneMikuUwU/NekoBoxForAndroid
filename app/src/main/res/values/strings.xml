@@ -625,5 +625,11 @@ By HatsuneMikuUwU Development"</string>
     A sing-box client for Android.</string>
     <string name="uwu_welcome_summary_2">Sing-box client for Android With a Miku UI style from the UwU development.</string>
     <string name="uwu_welcome_summary_3">Made with Heart, Gradle, Kotlin, Java code and more.</string>
+
+    <string name="uwu_greeting_morning">Good morning...</string>
+    <string name="uwu_greeting_afternoon">Good afternoon...</string>
+    <string name="uwu_greeting_evening">Good evening...</string>
+    <string name="uwu_greeting_night">Good night...</string>
+    <string name="uwu_greeting_late_night">"It's time to go to sleep..."</string>
     
 </resources>

@@ -528,4 +528,10 @@ Oleh Tim Pengembang HatsuneMikuUwU"</string>
     <string name="uwu_welcome_summary_2">Klien Sing-box untuk Android dengan gaya UI Miku dari tim pengembang UwU.</string>
     <string name="uwu_welcome_summary_3">Dibuat dengan Cinta, Gradle, Kotlin, kode Java, dan lainnya.</string>
 
+    <string name="uwu_greeting_morning">Selamat pagi...</string>
+    <string name="uwu_greeting_afternoon">Selamat siang...</string>
+    <string name="uwu_greeting_evening">Selamat sore...</string>
+    <string name="uwu_greeting_night">Selamat malam...</string>
+    <string name="uwu_greeting_late_night">Waktunya tidur...</string>
+
 </resources>
