@@ -77,16 +77,17 @@
                     android:layout_height="wrap_content"
                     android:singleLine="true"
                     android:layout_columnWeight="1.0" />
-                <TextView
+                <com.neko.marquee.text.AutoMarqueeTextView
                     android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
                     android:textSize="17.0sp"
                     android:textColor="?android:textColorPrimaryInverse"
-                    android:ellipsize="end"
+                    android:ellipsize="marquee"
                     android:layout_gravity="fill_horizontal"
                     android:id="@+id/status"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:maxLines="1" />
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever" />
             </LinearLayout>
         </io.nekohasekai.sagernet.widget.StatsBar>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
